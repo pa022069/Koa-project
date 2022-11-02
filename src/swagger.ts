@@ -1,5 +1,5 @@
 import * as Router from 'koa-router';
-import swaggerJSDoc from 'swagger-jsdoc';
+import * as swaggerJSDoc from 'swagger-jsdoc';
 import * as dotenv from "dotenv";
 dotenv.config();
 
