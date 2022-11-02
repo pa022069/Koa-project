@@ -23,8 +23,7 @@ app.use(json());
 app.use(logger());
 app.use(bodyParser());
 
-app.use(swagger.routes()).use(swagger.allowedMethods());
-app.use(
+app.use(swagger.routes()).use(swagger.allowedMethods()).use(
   koaSwagger({
     routePrefix: '/swagger',
     swaggerOptions: {
