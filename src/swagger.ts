@@ -27,7 +27,7 @@ const options = {
 const swaggerSpec = swaggerJSDoc(options);
 console.log(swaggerSpec);
 router.get('/swagger.json', async ctx => {
-  ctx.set('Content-Type', 'application/json'); // , application/x-www-form-urlencoded
+  ctx.set('Content-Type', 'application/json');
   ctx.body = swaggerSpec;
 });
 
