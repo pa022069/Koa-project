@@ -17,12 +17,11 @@ const swaggerDefinition = {
     },
   },
   host: 'localhost:3000',
-  basePath: '/',
 };
 
 const options = {
   swaggerDefinition,
-  apis: ['./src/*.ts'],
+  apis:  ["**/*.{ts,js"],
 };
 const swaggerSpec = swaggerJSDoc(options);
 console.log(swaggerSpec);
